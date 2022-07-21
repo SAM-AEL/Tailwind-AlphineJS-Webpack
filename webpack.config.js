@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'assets'),
-    filename: 'bundle.js',
+    filename: 'app.js',
   },
   module: {
     rules: [
@@ -26,7 +26,12 @@ module.exports = {
     ],
   },
   devServer: {
-    static: './',
+    static: {
+      directory: path.join(__dirname, './'),
+    },
     hot: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 };

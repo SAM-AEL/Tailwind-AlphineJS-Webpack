@@ -1,4 +1,4 @@
 # TailwindCSS-AlphineJS-Webpack
 
 ### npm install
-### npm start or npm run build
+### npm run watch (dev mode) or npm run build (prod mode)
