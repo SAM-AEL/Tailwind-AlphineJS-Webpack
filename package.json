@@ -4,7 +4,7 @@
   "description": "Admin Package for VenusWebs Projects",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack serve --mode=development --open",
+    "watch": "webpack serve --mode=development --open",
     "build": "export NODE_ENV=production && webpack"
   },
   "keywords": [
